@@ -50,3 +50,13 @@ def freq(string,passedkey):
 #step6: Call function and pass string in it
 freq("Mary had a little lamb Little lamb, little lamb Mary had a little lamb.Its fleece was white as snow And everywhere that Mary went Mary went, Mary went \
 Everywhere that Mary went The lamb was sure to go","little")
+
+#Practice
+Text= 'I said that that that was unnecessary. You said that that that was essential. We argued that that that was confusing. In the end, we agreed that that that was just fine.'
+formattedText = Text.replace('.','').replace(',','')
+splitted = formattedText.split(' ')
+dict = {}
+for word in splitted:
+    dict[word]=splitted.count(word)
+
+print(dict)
